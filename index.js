@@ -19,8 +19,10 @@ Do the following:
 
    HINT: no function required
 */
+let votingAge = num1
+if(num1 >= 18)
 
-
+console.log(votingAge(12));
 
 /*
 Task 1b - Values
@@ -31,8 +33,15 @@ Do the following:
    3. Console log the new value of the 1st variable
 
    HINT: no function required
+  
 */
 
+let name = 'jim';
+let name2 = 'pam';
+ if(name = 'jim'){
+   console.log(name2)
+ }
+ console.log(name);
 
 
 
@@ -48,8 +57,9 @@ Do the following:
    HINT: look up the Number method
 */
 
-
-
+let num1 = "1999"
+Number('1999');
+console.log(Number);
 
 /*
 Task 1d - Multiply
@@ -60,10 +70,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a, b){
+  return a*b;
 }
-
+console.log(multiply(1,4));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -76,9 +86,10 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age){
+  return age*7;
 }
+console.log(dogYears(12));
 
 
 
@@ -110,7 +121,7 @@ NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.449
 */  
 
 function hungryDog(weight, age){
-  if(age>= 1 && weight <== 5){
+  if(age >= 1 && weight <=5){
     return weight * 0.05;
   }else if(age>=1 && weight >=6 && weight <=10){
     return weight * 0.04;
@@ -150,9 +161,13 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-
+let computer= Math.random();
 function game(user, computer){
-  /*add your code here*/
+  if(computer<= .333){
+    return 'rock';
+  }else if(computer> .333 && computer< .666);{
+    return 'paper';}
+  
 }
 
 
@@ -198,8 +213,13 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(num1){
+  
+  num1--
+  while(num1>=0){
+        return "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall";
+      }
+      console.log(annoyingSong(99));
 }
 
 
@@ -218,8 +238,19 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(score){
+if(score>= 90){
+  return 'you got an A';
+}else if(score<=89 && score>=80){
+  return 'you got a B';
+}else if(score<=79 && score>=70){
+  return 'you got a C';
+}else if(score<=69 && score>=60){
+  return 'you got a D';
+}else if(score<60){
+  return 'you got an F';
+}
+
 }
 
 
@@ -260,4 +291,6 @@ module.exports = {
   feet,
   annoyingSong,
   grade
+
 }
+    
