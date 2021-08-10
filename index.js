@@ -19,10 +19,11 @@ Do the following:
 
    HINT: no function required
 */
-let votingAge = num1
-if(num1 >= 18)
+let votingAge = 18;
+if(votingAge >= 18){
+}
 
-console.log(votingAge(12));
+console.log()
 
 /*
 Task 1b - Values
@@ -36,10 +37,10 @@ Do the following:
   
 */
 
-let name = 'jim';
-let name2 = 'pam';
- if(name = 'jim'){
-   console.log(name2)
+let name = 5;
+let name2 = 10;
+ if(name2 === 10){
+   name = 1
  }
  console.log(name);
 
@@ -125,7 +126,7 @@ function hungryDog(weight, age){
     return weight * 0.05;
   }else if(age>=1 && weight >=6 && weight <=10){
     return weight * 0.04;
-  }else if(age >= 1 && weight >= 11 && wight <=15){
+  }else if(age >= 1 && weight >= 11 && weight <=15){
     return weight * 0.03;
   }else if(age >= 1 && weight > 15){
     return weight * 0.02;
@@ -134,8 +135,8 @@ function hungryDog(weight, age){
   }else if (age < 0.583 && age >= 0.333){
     return weight * 0.05;
 
-  }else if(age < 0.333){
-    return weight * 0.01;
+  }else if(age < 0.333 && age >= .1666){
+    return weight * 0.1;
   }
 }
 
@@ -161,15 +162,51 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-let computer= Math.random();
 function game(user, computer){
-  if(computer<= .333){
+  function compChoice(){
+  if(computer = 0){
     return 'rock';
-  }else if(computer> .333 && computer< .666);{
-    return 'paper';}
+  }else if(computer = 1){
+    return 'paper';
+  }else if(computer = 2){
+    return 'scissors';
+  }else{
+    return 'error';
+  }
   
 }
+  if(user === computer){
+    console.log(1);
+    return "it's a tie";
+  }else if(user === 'rock' && computer === 'scissors'){
+    console.log(2);
+    return 'you win!'
 
+  }else if(user === 'rock' && computer === 'paper'){
+    console.log(3);
+    return 'you lose!'
+
+  }else if(user === 'paper' && computer ==='rock'){
+    console.log(4);
+    return 'you win!'
+
+  }else if(user === 'paper' && computer === 'scissors'){
+    console.log(5);
+    return 'you lose!'
+
+  }else if(user === 'scissors' && computer === 'paper'){
+    console.log(6);
+    return 'you win!'
+
+  }else if(user === 'scissors' && computer === 'rock'){
+    console.log(7);
+    return 'you lose!'
+
+  }
+
+  
+
+}
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -183,8 +220,8 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(kilometers){
+  return kilometers * 0.621371;
 }
 
 
@@ -197,8 +234,8 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(cm){
+  return cm / 30.48; 
 }
 
 
@@ -213,14 +250,14 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(num1){
-  
-  num1--
-  while(num1>=0){
-        return "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall";
-      }
-      console.log(annoyingSong(99));
+function annoyingSong(number){
+  for(let i = number; i > 1; i--){
+    return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`;
+  }
 }
+  
+console.log('task 6',annoyingSong(99));
+  
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
